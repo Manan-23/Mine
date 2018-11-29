@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>OIL & GAS</title>
+
+
+<style>
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+</style>
+
+
+
+
+</head>
+<body background="Clouds.jpg">
+<center>
+<img src = "icon.jpg" align = "center" width = "250px" height = "200px">
+</center>
+
+
+<font color = "black">
+<h1 align = "center"> ACE REFINERIES LTD.<HR></h1>
+</font>
+
+
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href = "index.html" style="color: white;">HOME</a>
+<a href = "maps.html" style="color: white;">MAPS</a>
+<a href = "distance.html" style="color: white;">DISTANCE CALCULATOR</a>
+<a href = "contact.html" style="color: white;">CONTACT DETAILS</a>
+<a href = "about.html" style="color: white;">ABOUT</a>
+</div>
+
+
+
+
+<form id="tfnewsearch" method="get" action="http://www.google.com" align = "">
+		   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<b> Open</b></span>
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       
+		        <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value=""><input type="submit" value="Search" class="tfbutton2">
+		</form>
+
+
+
+
+
+<img src = "what-is-oil-refinery.jpg" width = "100%" height = "45%"><br><br>
+
+<FONT COLOR = "black">
+
+
+<button class="collapsible">WELCOME TO 'ACE REFINERIES LIMITED'</button>
+<div class="content">
+  <p>ACE refineries is a well known name and established player in oil and lubricants refining processes. Our range of speciality oils and lubricants include liquid paraffin, industrial oil and grease, automotive lubricants, petroleoum jelly all are produces under great care.<br><br>
+Our manufacturing facilities at Vijaywada and Vizag is ISO 14001:2004 and ISO 9001:2008 certified for manufacture of certain of our speciality oils and lubricants products, reflecting our commitment towards quality and sustainable environment. In addition, our Vizag facility
+is GMP certified for good manufacturing practices system for the manufacture of products including light and heavy liquid paraffin and white petroleum jelly and our Silvassa facility is OHSAS 18001:2007 certified in relation to occupational health and safety management systems for
+our products. Our products are manufactured to maintain international quality and are approved by various authorities, including FDA (Government of Maharashtra and UT of Dadra and Nagar Haveli) for products including liquid paraffin and petroleum jelly and BIS for new insulating oils (commonly known as transformer oil). Our products also undergo testing at various laboratories, including ERDA and CPRI. We have storage tanks for base oil and warehouse facility for storage of speciality oils and products, additives and waxes at both our manufacturing facilities. Our combined in-house storage capacity for base oil is 24,650 KL. We also have warehouses with combined storage capacity of 2,560 KL for our finished products and other raw materials being additives and waxes spread across an area of 27,770 square feet.
+</p>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<br><br>
+
+
+
+<FONT COLOR = "white">
+</h3>
+</FONT>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(17.3850,78.4867);
+  var myCenter1 = new google.maps.LatLng(16.5062,80.6480);
+  var myCenter2 = new google.maps.LatLng(17.6868,83.2185);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({
+	  position: myCenter,
+	  map:map,
+	  title:"Hyderabad"});
+  marker.setMap(map);
+  
+  var marker = new google.maps.Marker({
+	  position: myCenter1,
+	  map:map,
+	  title:"Vijawada"});
+  marker.setMap(map);
+  
+  var marker = new google.maps.Marker({
+	  position: myCenter2,
+	  map:map,
+	  title:"Vizag"});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4kwwFEVMgPAZTA5RfdvvWYUIqdXDTROE&callback=myMap"></script>
+<br><br>
+<hr>
+<b>
+<font align = "center">
+copyright 2018 © ACE Computer Enterprises. All Rights Reserved. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Website Designed and Developed: Manan Gupta (Software Developer)&nbsp;&nbsp;&nbsp;&nbsp;
+Contact: (M)+91-8950431703
+</center>
+<center>
+<br>
+<a href = "contact.html" style="color: black;">CONTACT DETAILS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = "about.html" style="color: black;">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</center>
+</b>
+</font>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+</script>
+
+</body>
+</html>

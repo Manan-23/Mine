@@ -1,0 +1,187 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Robot calculator</title>
+<head>
+<body background = "clouds.jpg">
+    
+<center>
+<img src = "icon.jpg" align = "center" width = "250px" height = "200px"></center>
+<font color = "black">
+<center>
+<h1><B> ACE REFINERIES LTD.</B><HR></h1>
+</center>
+</font>
+
+
+
+
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href = "index.html" style="color: white;">HOME</a>
+<a href = "maps.html" style="color: white;">MAPS</a>
+<a href = "distance.html" style="color: white;">DISTANCE CALCULATOR</a>
+<a href = "contact.html" style="color: white;">CONTACT DETAILS</a>
+<a href = "about.html" style="color: white;">ABOUT</a>
+
+</div>
+
+<form id="tfnewsearch" method="get" action="http://www.google.com" align = "">
+		   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<b> Open</b></span>
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		        <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value=""><input type="submit" value="Search" class="tfbutton2">
+		</form>
+
+
+
+
+
+
+
+
+<h1>
+<div align="center" style="background-color:grey">
+ <input type="text" name="Value1" placeholder="Enter Distance in KM" id="test1">
+ <button onclick="condition();" >Print</button>
+ <div id="test2"></div>
+ <script type="text/javascript">
+   function condition() {
+ 
+      var a=document.getElementById("test1").value;
+ 
+      if (a >0 && a<=500) {
+    document.getElementById("test2").innerHTML = "1 Robot and 1 day required";
+ }
+ 
+      else if (a >500 && a<=1000 ) {
+    document.getElementById("test2").innerHTML = "2 Robot and 2 day required";
+ 
+ 
+ }     else if (a >1000 && a<=1500 ) {
+    document.getElementById("test2").innerHTML = "3 Robot and 3 day required";
+ 
+ 
+ }     else if (a >1500 && a<=2000 ) {
+    document.getElementById("test2").innerHTML = "4 Robot and 4 day required";
+ 
+ 
+ }     else if (a >2000 && a<=2500 ) {
+    document.getElementById("test2").innerHTML = "5 Robot and 5 day required";
+ 
+ 
+ 
+ }     else if (a >2500 && a<=3000 ) {
+    document.getElementById("test2").innerHTML = "6 Robot and 6 day required";
+ 
+ 
+ }     else if (a >3000 && a<=3500 ) {
+    document.getElementById("test2").innerHTML = "7 Robot and 7 day required";
+ 
+ 
+ }     else if (a >3500 && a<=4000 ) {
+    document.getElementById("test2").innerHTML = "8 Robot and 8 day required";
+ 
+ 
+ }     else if (a >4500 && a<=5000 ) {
+    document.getElementById("test2").innerHTML = "9 Robot and 9 day required";
+ 
+ 
+ }
+     else {
+   document.getElementById("test2").innerHTML = "Enter Valid Input: Numbers only and it should be in range 0-5000 only";
+ }
+ 
+   }
+ 
+   </script>
+ </div>
+ </h1>
+ 
+ <br><br><br><br><br><br><br><br>
+ 
+ <hr>
+<font align = "center">
+<b>copyright 2018 © ACE Computer Enterprises. All Rights Reserved. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Website Designed and Developed: Manan Gupta (Software Developer)&nbsp;&nbsp;&nbsp;&nbsp;
+Contact: (M)+91-8950431703
+
+<center>
+<br>
+<a href = "contact.html" style="color: black;">CONTACT DETAILS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = "about.html" style="color: black;">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</center>
+
+</b>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+ 
+ 
+ 
+ 
+ 
+ 
+
+</body>
+</html>
